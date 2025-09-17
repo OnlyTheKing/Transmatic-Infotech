@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      aria-label="Transmatic Infotech"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample11"
+          aria-controls="navbarsExample11"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <a class="navbar-brand col-lg-3 me-0" href="index.html">
+            <img
+              class="logo"
+              src="/images/Transmatic-Transperent-logo.png"
+              alt="Transmatic Infotech"
+            />
+            <span class="tagline d-block small"
+              >Transforming IT, Protecting Futures.</span
+            >
+          </a>
+
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="industries.html"
+                >Industries</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <a
+              class="support-btn"
+              href="javascript:void(0)"
+              onclick="openForm()"
+              >Support</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="container display-flex">
+      <div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-label="Slide 1"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class=""
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class=""
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="hero-img img-fluid"
+              src="/images/Network-security.jpg"
+              alt="network security"
+            />
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h2>Comprehensive Security Solutions</h2>
+                <p class="opacity-75">
+                  End-to-end protection for your business against cyber threats
+                  — from networks to endpoints.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="services.html"
+                    >Learn more</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="hero-img img-fluid"
+              src="/images/cloud-computing-diagram-show-on-hand-data_45983444_large.jpg"
+              alt="Data backup and storage"
+            />
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h2>Business Continuity & Recovery</h2>
+                <p>
+                  Ensure uninterrupted operations with secure backup, disaster
+                  recovery, and data resilience.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="services.html"
+                    >Learn more</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="hero-img img-fluid"
+              src="/images/Web-development.jpg"
+              alt="Web Development"
+            />
+
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h2>Digital Presence Solutions</h2>
+                <p>
+                  Custom websites, e-commerce, and web apps that power your
+                  growth online.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="services.html"
+                    >Know more</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Partner section -->
+    <div class="partner-carousel">
+      <h2 class="partner-title">Our Trusted Partners</h2>
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <img src="/images/sophos-logo.png" alt="Sophos" />
+          <img src="/images/sonicwall-logo.png" alt="Sonicwall" />
+          <img src="/images/mcafee-logo.png" alt="McAfee" />
+          <img src="/images/kaspersky-lab-logo.png" alt="kaskpersky" />
+          <img src="/images/qnap-logo.png" alt="qnap" />
+          <img src="/images/synology-logo.png" alt="synology" />
+          <img src="/images/nakivo-logo.png" alt="nakivo" />
+          <img src="/images/Retrospect.png" alt="retrospect" />
+          <img src="/images/veeam.png" alt="veeam" />
+          <img src="/images/dell-logo.png" alt="dell-logo" />
+          <img src="/images/hp-logo.png" alt="hp" />
+          <img src="/images/microsoft-logo.png" alt="microsoft-logo" />
+          <img src="/images/rediffmail-logo.png" alt="rediff" />
+          <!-- Repeat logos again for seamless infinite scroll -->
+          <img src="/images/sophos-logo.png" alt="Sophos" />
+          <img src="/images/sonicwall-logo.png" alt="Sonicwall" />
+          <img src="/images/mcafee-logo.png" alt="McAfee" />
+          <img src="/images/kaspersky-lab-logo.png" alt="kaskpersky" />
+          <img src="/images/qnap-logo.png" alt="qnap" />
+          <img src="/images/synology-logo.png" alt="synology" />
+          <img src="/images/nakivo-logo.png" alt="nakivo" />
+          <img src="/images/Retrospect.png" alt="retrospect" />
+          <img src="/images/veeam.png" alt="veeam" />
+          <img src="/images/dell-logo.png" alt="dell-logo" />
+          <img src="/images/hp-logo.png" alt="hp" />
+          <img src="/images/microsoft-logo.png" alt="microsoft-logo" />
+          <img src="/images/rediffmail-logo.png" alt="rediff" />
+          <!-- Repeat logos again for seamless infinite scroll -->
+          <img src="/images/sophos-logo.png" alt="Sophos" />
+          <img src="/images/sonicwall-logo.png" alt="Sonicwall" />
+          <img src="/images/mcafee-logo.png" alt="McAfee" />
+          <img src="/images/kaspersky-lab-logo.png" alt="kaskpersky" />
+          <img src="/images/qnap-logo.png" alt="qnap" />
+          <img src="/images/synology-logo.png" alt="synology" />
+          <img src="/images/nakivo-logo.png" alt="nakivo" />
+          <img src="/images/Retrospect.png" alt="retrospect" />
+          <img src="/images/veeam.png" alt="veeam" />
+          <img src="/images/dell-logo.png" alt="dell-logo" />
+          <img src="/images/hp-logo.png" alt="hp" />
+          <img src="/images/microsoft-logo.png" alt="microsoft-logo" />
+          <img src="/images/rediffmail-logo.png" alt="rediff" />
+          <!-- Repeat logos again for seamless infinite scroll -->
+          <img src="/images/sophos-logo.png" alt="Sophos" />
+          <img src="/images/sonicwall-logo.png" alt="Sonicwall" />
+          <img src="/images/mcafee-logo.png" alt="McAfee" />
+          <img src="/images/kaspersky-lab-logo.png" alt="kaskpersky" />
+          <img src="/images/qnap-logo.png" alt="qnap" />
+          <img src="/images/synology-logo.png" alt="synology" />
+          <img src="/images/nakivo-logo.png" alt="nakivo" />
+          <img src="/images/Retrospect.png" alt="retrospect" />
+          <img src="/images/veeam.png" alt="veeam" />
+          <img src="/images/dell-logo.png" alt="dell-logo" />
+          <img src="/images/hp-logo.png" alt="hp" />
+          <img src="/images/microsoft-logo.png" alt="microsoft-logo" />
+          <img src="/images/rediffmail-logo.png" alt="rediff" />
+        </div>
+      </div>
+    </div>
+
+    <!-- about us & our services -->
+    <div class="container marketing text-center">
+      <!-- Three columns of text below the carousel -->
+      <div class="row justify-content-center g-5">
+        <div class="col-lg-4 col-md-6">
+          <img
+            class="marketing-img"
+            src="/images/Who-we-are.png"
+            alt="Who We Are"
+          />
+          <h2 class="fw-normal marketing-heading">Let's See Who We Are</h2>
+          <p class="marketing-text">
+            Transmatic Infotech — empowering businesses since 2014 with secure,
+            scalable, and future-ready IT solutions.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="about.html">View details »</a>
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <img
+            class="marketing-img"
+            src="/images/What-we-do.png"
+            alt="What we do"
+          />
+          <h2 class="fw-normal marketing-heading">Let's See What we do</h2>
+          <p class="marketing-text">
+            We deliver secure, scalable, and future-ready IT solutions tailored
+            to your business needs.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="services.html">View details »</a>
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <img
+            class="marketing-img"
+            src="/images/Where-we-are.png"
+            alt="Where we are"
+          />
+          <h2 class="fw-normal marketing-heading">Let's See Where We Are</h2>
+          <p class="marketing-text">
+            Registered in Pune, with a growing presence across <br />
+            Pune | Nashik | Ch. Sambhajinagar.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="contact.html">View details »</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- /.col-lg-4 -->
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+    <!-- Footer -->
+    <div class="container footer-custom mt-5">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="text-center text-md-start">
+          © 2025 Transmatic Infotech. All rights reserved.
+        </p>
+
+        <ul
+          class="nav ms-auto justify-content-center justify-content-md-end mt-3 mt-md-0"
+        >
+          <li class="nav-item">
+            <a href="/index.html" class="nav-link px-1 text-body-secondary"
+              >Home</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-1 text-body-secondary"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link px-1 text-body-secondary"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="industries.html" class="nav-link px-1 text-body-secondary"
+              >Industries</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link px-1 text-body-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Support Form Modal -->
+    <div id="supportModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <h2>Customer Support</h2>
+        <p>Please fill out the form and our team will contact you soon.</p>
+
+        <form
+          method="POST"
+          action="mailto:kishor.bhosale@transmatic.in"
+          enctype="text/plain"
+        >
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Business Email"
+            required
+          />
+          <input type="tel" name="phone" placeholder="Contact Number" />
+          <input
+            type="text"
+            name="brand"
+            placeholder="Product Brand"
+            required
+          />
+          <input type="text" name="model" placeholder="Model Number" required />
+          <input
+            type="text"
+            name="serial"
+            placeholder="Serial Number"
+            required
+          />
+          <select name="issue" required>
+            <option value="">-- Select Issue Type --</option>
+            <option value="technical">Technical Support</option>
+            <option value="billing">Billing & Payments</option>
+            <option value="product">Product Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+          <select name="priority" required>
+            <option value="low">Low</option>
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="urgent">Urgent</option>
+          </select>
+          <textarea
+            name="message"
+            placeholder="Describe your issue..."
+            required
+          ></textarea>
+          <button type="submit">Submit Support Request</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

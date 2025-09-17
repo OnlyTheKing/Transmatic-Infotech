@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      aria-label="Transmatic Infotech"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample11"
+          aria-controls="navbarsExample11"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <a class="navbar-brand col-lg-3 me-0" href="index.html">
+            <img
+              class="logo"
+              src="/images/Transmatic-Transperent-logo.png"
+              alt="Transmatic Infotech"
+            />
+            <span class="tagline d-block small"
+              >Transforming IT, Protecting Futures.</span
+            >
+          </a>
+
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="industries.html"
+                >Industries</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <a class="support-btn" href="javascript:void(0)" onclick="openForm()">Support</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Services -->
+    <div class="container py-4">
+      <!-- Overview -->
+      <div class="overview p-5 mb-4">
+        <div class="box-color container-fluid py-5 border border-secondary-subtle rounded-3">
+          <h1 class="display-5 fw-bold">Overview of Our Core Services</h1>
+          <p class="fs-4 mx-auto text-justify">
+            At Transmatic Infotech, we deliver a comprehensive suite of IT
+            solutions that empower businesses with secure, efficient, and
+            future-ready technology. Each service is tailored to your unique
+            operational needs, enabling stronger infrastructure, seamless
+            connectivity, and resilient digital environments. Our approach
+            ensures measurable growth, minimized downtime, and long-term
+            business agility.
+          </p>
+        </div>
+      </div>
+
+      <!-- Network Security -->
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="service-img">
+            <img src="images/Network-security-services.png" alt="network security">
+          </div>
+        </div>
+        <div class="box-color col-md-6">
+         <div class="h-100 p-5 border border-secondary-subtle rounded-3">
+            <h2>🔒 Network Security</h2>
+            <ul>
+              <li>
+                Firewall setup & configuration (next-gen & enterprise-grade)
+              </li>
+              <li>Secure VPN implementation for remote workforce</li>
+              <li>IDS/IPS deployment to detect & prevent threats</li>
+              <li>Vulnerability assessments & continuous monitoring</li>
+              <li>Multi-factor authentication (MFA) integration</li>
+              <li>Security policy design & compliance (ISO, GDPR, HIPAA)</li>
+              <li>Real-time threat intelligence & reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider" />
+
+      <!-- Endpoint Protection -->
+      <div class="row align-items-md-stretch">
+        <div class="box-color col-md-6">
+          <div class="h-100 p-5 border border-secondary-subtle rounded-3">
+            <h2>🛡️ Endpoint Protection</h2>
+            <ul>
+              <li>Enterprise antivirus & anti-malware solutions</li>
+              <li>Device access control & endpoint encryption</li>
+              <li>Mobile device management (MDM) for BYOD security</li>
+              <li>Patch & update compliance for system stability</li>
+              <li>Ransomware protection & rollback solutions</li>
+              <li>Remote monitoring & management (RMM) of endpoints</li>
+              <li>Zero Trust security implementation for endpoints</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="service-img">
+            <img src="images/endpoint-security-services.png" alt="network security">
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider" />
+
+      <!-- Data Backup & Storage -->
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="service-img">
+            <img src="images/databackup-and-storage-services.png" alt="data backup and storage">
+          </div>
+        </div>
+        <div class="box-color col-md-6">
+          <div class="h-100 p-5 border border-secondary-subtle rounded-3">
+            <h2>💾 Data Backup & Storage</h2>
+            <ul>
+              <li>On-premise & cloud backup solutions</li>
+              <li>Disaster recovery planning & failover testing</li>
+              <li>Storage virtualization & optimization</li>
+              <li>Enterprise-grade storage setup (SAN, NAS)</li>
+              <li>Automated scheduled backups & recovery testing</li>
+              <li>Hybrid cloud backup for cost optimization</li>
+              <li>Long-term archival storage with compliance support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider" />
+
+      <!-- Mail Services -->
+      <div class="row align-items-md-stretch">
+        <div class="box-color col-md-6">
+          <div class="h-100 p-5 border border-secondary-subtle rounded-3">
+            <h2>📧 Mail Services</h2>
+            <ul>
+              <li>
+                Business email hosting (Microsoft 365, Google Workspace, Zoho
+                Mail)
+              </li>
+              <li>Advanced email security, spam & phishing filtering</li>
+              <li>Migration & backup solutions for hassle-free transitions</li>
+              <li>Mail server deployment, management & scaling</li>
+              <li>Data loss prevention (DLP) policies for email</li>
+              <li>Email archiving & legal compliance solutions</li>
+              <li>Integration with CRM & collaboration platforms</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="service-img">
+            <img src="images/email-services.png" alt="email services">
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider" />
+
+      <!-- Web Development -->
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="service-img">
+            <img src="images/web-development-services.png" alt="web development">
+          </div>
+        </div>
+        <div class="box-color col-md-6">
+          <div class="h-100 p-5 border border-secondary-subtle rounded-3">
+            <h2>🌐 Web Development</h2>
+            <ul>
+              <li>Custom, responsive website design (UI/UX optimized)</li>
+              <li>E-commerce platform development (Magento, Shopify, WooCommerce)</li>
+              <li>Web application development (enterprise & SaaS solutions)</li>
+              <li>Ongoing maintenance & technical support</li>
+              <li>SEO optimization & performance tuning</li>
+              <li>CMS solutions (WordPress, Joomla, Drupal)</li>
+              <li>API integration & third-party service connectivity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider" />
+
+      <!-- IT Hardware & Networking -->
+      <div class="row align-items-md-stretch">
+        <div class="box-color col-md-6 rounded-3">
+          <div class="h-100 p-5 border border-secondary-subtle rounded-3">
+            <h2>🖥️ IT Hardware & Networking</h2>
+            <ul>
+              <li>
+                Supply & installation of servers, desktops, laptops, routers,
+                switches
+              </li>
+              <li>LAN/WAN setup, configuration & optimization</li>
+              <li>Wireless deployment solutions (secure Wi-Fi & hotspots)</li>
+              <li>Annual Maintenance Contracts (AMC) with proactive support</li>
+              <li>Structured cabling & rack solutions</li>
+              <li>Network monitoring & performance management</li>
+              <li>Virtualization (VMware, Hyper-V) & cloud integration</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="service-img">
+            <img src="/images/hardware-netwroking-services.png" alt="hardware and networking">
+          </div>
+        </div>
+      </div>
+
+  <!-- Footer -->
+    <div class="container footer-custom mt-5">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="text-center text-md-start">
+          © 2025 Transmatic Infotech. All rights reserved.
+        </p>
+
+        <ul
+          class="nav ms-auto justify-content-center justify-content-md-end mt-3 mt-md-0"
+        >
+          <li class="nav-item">
+            <a href="/index.html" class="nav-link px-1 text-body-secondary"
+              >Home</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-1 text-body-secondary"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link px-1 text-body-secondary"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="industries.html" class="nav-link px-1 text-body-secondary"
+              >Industries</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link px-1 text-body-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Support Form Modal -->
+<div id="supportModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeForm()">&times;</span>
+    <h2>Customer Support</h2>
+    <p>Please fill out the form and our team will contact you soon.</p>
+
+    <form method="POST" action="mailto:kishor.bhosale@transmatic.in" enctype="text/plain">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Business Email" required>
+      <input type="tel" name="phone" placeholder="Contact Number">
+      <input type="text" name="brand" placeholder="Product Brand" required>
+      <input type="text" name="model" placeholder="Model Number" required>
+      <input type="text" name="serial" placeholder="Serial Number" required>
+      <select name="issue" required>
+        <option value="">-- Select Issue Type --</option>
+        <option value="technical">Technical Support</option>
+        <option value="billing">Billing & Payments</option>
+        <option value="product">Product Inquiry</option>
+        <option value="other">Other</option>
+      </select>
+      <select name="priority" required>
+        <option value="low">Low</option>
+        <option value="normal">Normal</option>
+        <option value="high">High</option>
+        <option value="urgent">Urgent</option>
+      </select>
+      <textarea name="message" placeholder="Describe your issue..." required></textarea>
+      <button type="submit">Submit Support Request</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
