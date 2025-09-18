@@ -60,6 +60,7 @@ body{
 .navbar .nav-link:hover {
   color: rgb(224, 118, 36) !important;
 }
+
 .carousel-item {
   height: 90vh; /* Match hero-img */
   position: relative;
@@ -170,6 +171,9 @@ font-size: 1.8rem;
   
 }
 
+.copyright{
+  color: white !important;
+}
 /* contact page css */
 
 /* Contact Section Wrapper */
