@@ -8,6 +8,9 @@ body{
   font-family: "Montserrat", sans-serif !important;
 }
 
+.navbar-toggler{
+  background-color:#ff8a42dc !important;
+}
 .navbar {
   background: #0A2A43; /* professional solid base */
   padding: 15px;
