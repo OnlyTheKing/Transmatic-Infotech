@@ -127,15 +127,23 @@ body{
   gap: 80px;
 }
 
+
 .carousel-track img {
-  height: 90px;
-  opacity: 1;
-  transition: opacity 0.5s;
+  max-height: 90px;       /* all logos capped at same height */
+  width: auto;            /* preserve aspect ratio */
+  object-fit: contain;    /* prevents distortion */
+  margin: 0 15px;         /* spacing between logos */
+  vertical-align: middle; /* aligns logos nicely */
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 .carousel-track img:hover {
   opacity: 1;
+  transform: scale(1.05); /* subtle zoom on hover */
 }
+
+
 
 /* Infinite scroll effect */
 @keyframes scroll {
