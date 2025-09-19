@@ -11,6 +11,8 @@ body{
 .navbar-toggler{
   background-color:#ff8a42dc !important;
 }
+
+/* Replace your .navbar block with this */
 .navbar {
   background-color: #0A2A43;                 /* solid navbar background */
   padding: 8px 15px;
@@ -21,6 +23,7 @@ body{
   background-size: 100% 4px;                  /* width 100%, height = 4px (thickness) */
   background-position: left bottom;           /* anchored to the bottom */
 }
+
 
 .nav-item{
   padding-left: 40px !important;
@@ -128,9 +131,8 @@ body{
   width: max-content;
   animation: scroll 120s linear infinite;
   align-items: center;
-  gap: 80px;
+  gap: 70px;
 }
-
 
 .carousel-track img {
   max-height: 90px;       /* all logos capped at same height */
@@ -146,7 +148,6 @@ body{
   opacity: 1;
   transform: scale(1.05); /* subtle zoom on hover */
 }
-
 
 
 /* Infinite scroll effect */
@@ -757,7 +758,7 @@ font-size: large;
 /* Modal Content Box */
 .modal-content {
   background: linear-gradient(135deg, #0073C6, #FF8C42);
-  margin: 5% auto;
+  margin: 100px auto 5%; /* ⬅️ 100px from top (navbar + gap), auto sides, 5% bottom */
   padding: 25px;
   border-radius: 12px;
   width: 90%;
@@ -766,7 +767,6 @@ font-size: large;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
   animation: slideDown 0.4s ease;
-  margin-top: 50px !important;
 }
 
 
@@ -826,6 +826,38 @@ font-size: large;
   opacity: 0.9;
   transform: scale(1.02);
 }
+
+/* Validation Popup */
+.validation-popup {
+  position: fixed;
+  top: 100px; /* below navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d9534f; /* red alert color */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 2000;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.validation-popup .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
 
 .navbar .support-btn {
   background: linear-gradient(90deg, #0073C6, #FF8C42);
