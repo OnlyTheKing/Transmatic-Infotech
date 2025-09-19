@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Transmatic Infotech | Contact</title>
+    <meta name="description" content="Get in touch with Transmatic Infotech in Pune, Nashik, or Aurangabad for cybersecurity, backup & recovery, web development, and email solutions. Request expert IT support today.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -335,52 +337,68 @@
                 </div>
               </div>
 
-              <!-- Right column -->
-              <div class="col-md-7 get-back">
-                <div class="contact-form">
-                  <h3 class="get-in mb-4">Send us a message</h3>
-                  <form>
-                    <div class="row">
-                      <div class="col-md-6 mb-3">
-                        <label class="form-label">First Name</label>
-                        <input type="text" class="form-control" />
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label class="form-label">Last Name</label>
-                        <input type="text" class="form-control" />
-                      </div>
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Email Id</label>
-                      <input type="email" class="form-control" />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Subject</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="How can we help?"
-                      />
-                    </div>
-                    <div class="mb-4">
-                      <label class="form-label">Message</label>
-                      <textarea
-                        class="form-control"
-                        rows="5"
-                        placeholder="Your message here..."
-                      ></textarea>
-                    </div>
-                    <a
-                      href="mailto:kishor.bhosale@transmatic.in"
-                      class="contact-button"
-                      data-tooltip="Send Email"
-                      role="button"
-                      aria-label="Send Email to kishor.bhosale@transmatic.in"
-                    >
-                      Submit
-                    </a>
-                  </form>
-                  <!-- Map container -->
+<!-- Right column -->
+<div class="col-md-7 get-back">
+  <div class="contact-form">
+    <h3 class="get-in mb-4">Send us a message</h3>
+
+    <!-- Replace FORM_ID_CONTACT with your Formspree endpoint -->
+    <form id="contactForm" action="https://formspree.io/f/mnnbeawo" method="POST" novalidate>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">First Name</label>
+          <input type="text" name="first_name" class="form-control" 
+                 required pattern="^[A-Za-z\s]{2,}$" 
+                 title="Enter at least 2 letters" />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Last Name</label>
+          <input type="text" name="last_name" class="form-control" 
+                 required pattern="^[A-Za-z\s]{2,}$" 
+                 title="Enter at least 2 letters" />
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email Id</label>
+        <input type="email" name="email" class="form-control" 
+               required title="Enter a valid email address" />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Contact Number</label>
+        <input type="tel" name="phone" class="form-control" 
+               required pattern="^\d{10,15}$" 
+               placeholder=""
+               title="Enter 10 to 15 digits (numbers only)" />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Subject</label>
+        <input type="text" name="subject" class="form-control" 
+               placeholder="How can we help?" 
+               required minlength="3" 
+               title="Enter at least 3 characters" />
+      </div>
+
+      <div class="mb-4">
+        <label class="form-label">Message</label>
+        <textarea name="message" class="form-control" rows="5" 
+                  placeholder="Your message here..." 
+                  required minlength="10" 
+                  title="Enter at least 10 characters"></textarea>
+      </div>
+
+      <!-- Hidden field to identify form -->
+      <input type="hidden" name="form_type" value="contact" />
+
+      <button type="submit" class="contact-button">Submit</button>
+      <p id="contactStatus" class="mt-2 small"></p>
+    </form>
+  </div>
+</div>
+
+             <!-- Map container -->
                   <div class="map-container mt-4">
                     <div
                       id="map"
@@ -393,7 +411,7 @@
                     ></div>
                   </div>
 
-                  <!-- Leaflet CSS -->
+                  <!-- Map-Leaflet CSS -->
                   <link
                     rel="stylesheet"
                     href="https://unpkg.com/leaflet/dist/leaflet.css"
@@ -453,12 +471,15 @@
         </div>
       </div>
     </section>
+
+    
+    
     <!-- Footer -->
     <div class="container footer-custom mt-5">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
-        <p class="text-center text-md-start">
+        <p class="copyright text-center text-md-start">
           © 2025 Transmatic Infotech. All rights reserved.
         </p>
 
@@ -494,6 +515,7 @@
         </ul>
       </footer>
     </div>
+
     <!-- Support Form Modal -->
     <div id="supportModal" class="modal">
       <div class="modal-content">
@@ -501,32 +523,66 @@
         <h2>Customer Support</h2>
         <p>Please fill out the form and our team will contact you soon.</p>
 
+        <!-- Replace FORM_ID_SUPPORT with your Formspree endpoint -->
         <form
+          id="supportForm"
           method="POST"
-          action="mailto:kishor.bhosale@transmatic.in"
-          enctype="text/plain"
+          action="https://formspree.io/f/xpwjgvrb"
+          novalidate
         >
-          <input type="text" name="name" placeholder="Full Name" required />
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+            pattern="^[A-Za-z\s]{2,}$"
+            title="Enter at least 2 letters"
+          />
+
           <input
             type="email"
             name="email"
             placeholder="Business Email"
             required
+            title="Enter a valid email address"
           />
-          <input type="tel" name="phone" placeholder="Contact Number" />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Contact Number"
+            required
+            pattern="^\d{10,15}$"
+            title="Enter 10 to 15 digits (numbers only)"
+          />
+
           <input
             type="text"
             name="brand"
             placeholder="Product Brand"
             required
+            minlength="2"
+            title="Enter at least 2 characters"
           />
-          <input type="text" name="model" placeholder="Model Number" required />
+
+          <input
+            type="text"
+            name="model"
+            placeholder="Model Number"
+            required
+            minlength="2"
+            title="Enter a valid model number"
+          />
+
           <input
             type="text"
             name="serial"
             placeholder="Serial Number"
             required
+            minlength="3"
+            title="Enter a valid serial number"
           />
+
           <select name="issue" required>
             <option value="">-- Select Issue Type --</option>
             <option value="technical">Technical Support</option>
@@ -534,18 +590,28 @@
             <option value="product">Product Inquiry</option>
             <option value="other">Other</option>
           </select>
+
           <select name="priority" required>
+            <option value="">-- Select Priority --</option>
             <option value="low">Low</option>
             <option value="normal">Normal</option>
             <option value="high">High</option>
             <option value="urgent">Urgent</option>
           </select>
+
           <textarea
             name="message"
             placeholder="Describe your issue..."
             required
+            minlength="10"
+            title="Enter at least 10 characters"
           ></textarea>
+
+          <!-- Hidden field to identify form -->
+          <input type="hidden" name="form_type" value="support" />
+
           <button type="submit">Submit Support Request</button>
+          <p id="supportStatus" class="mt-2 small"></p>
         </form>
       </div>
     </div>
