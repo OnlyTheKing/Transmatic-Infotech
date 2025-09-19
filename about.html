@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Transmatic Infotech | About</title>
+    <meta name="description" content="Learn about Transmatic Infotech, serving Pune, Nashik, and Aurangabad. Trusted IT experts in cybersecurity, backup & recovery, web development, and email solutions since 2014.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -78,7 +80,12 @@
             </li>
           </ul>
           <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-            <a class="support-btn" href="javascript:void(0)" onclick="openForm()">Support</a>
+            <a
+              class="support-btn"
+              href="javascript:void(0)"
+              onclick="openForm()"
+              >Support</a
+            >
           </div>
         </div>
       </div>
@@ -153,12 +160,15 @@
       <!-- /END THE FEATURETTES -->
 
     </div>
-<!-- Footer -->
+    
+    
+    <!-- Footer -->
+     
     <div class="container footer-custom mt-5">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
-        <p class="text-center text-md-start">
+        <p class="copyright text-center text-md-start">
           © 2025 Transmatic Infotech. All rights reserved.
         </p>
 
@@ -195,41 +205,107 @@
       </footer>
     </div>
 
+    <!-- Support Form Modal -->
+    <div id="supportModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <h2>Customer Support</h2>
+        <p>Please fill out the form and our team will contact you soon.</p>
 
-<!-- Support Form Modal -->
-<div id="supportModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeForm()">&times;</span>
-    <h2>Customer Support</h2>
-    <p>Please fill out the form and our team will contact you soon.</p>
+        <!-- Replace FORM_ID_SUPPORT with your Formspree endpoint -->
+        <form
+          id="supportForm"
+          method="POST"
+          action="https://formspree.io/f/xpwjgvrb"
+          novalidate
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+            pattern="^[A-Za-z\s]{2,}$"
+            title="Enter at least 2 letters"
+          />
 
-    <form method="POST" action="mailto:kishor.bhosale@transmatic.in" enctype="text/plain">
-      <input type="text" name="name" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="Business Email" required>
-      <input type="tel" name="phone" placeholder="Contact Number">
-      <input type="text" name="brand" placeholder="Product Brand" required>
-      <input type="text" name="model" placeholder="Model Number" required>
-      <input type="text" name="serial" placeholder="Serial Number" required>
-      <select name="issue" required>
-        <option value="">-- Select Issue Type --</option>
-        <option value="technical">Technical Support</option>
-        <option value="billing">Billing & Payments</option>
-        <option value="product">Product Inquiry</option>
-        <option value="other">Other</option>
-      </select>
-      <select name="priority" required>
-        <option value="low">Low</option>
-        <option value="normal">Normal</option>
-        <option value="high">High</option>
-        <option value="urgent">Urgent</option>
-      </select>
-      <textarea name="message" placeholder="Describe your issue..." required></textarea>
-      <button type="submit">Submit Support Request</button>
-    </form>
-  </div>
-</div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Business Email"
+            required
+            title="Enter a valid email address"
+          />
 
-<script src="script.js"></script>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Contact Number"
+            required
+            pattern="^\d{10,15}$"
+            title="Enter 10 to 15 digits (numbers only)"
+          />
+
+          <input
+            type="text"
+            name="brand"
+            placeholder="Product Brand"
+            required
+            minlength="2"
+            title="Enter at least 2 characters"
+          />
+
+          <input
+            type="text"
+            name="model"
+            placeholder="Model Number"
+            required
+            minlength="2"
+            title="Enter a valid model number"
+          />
+
+          <input
+            type="text"
+            name="serial"
+            placeholder="Serial Number"
+            required
+            minlength="3"
+            title="Enter a valid serial number"
+          />
+
+          <select name="issue" required>
+            <option value="">-- Select Issue Type --</option>
+            <option value="technical">Technical Support</option>
+            <option value="billing">Billing & Payments</option>
+            <option value="product">Product Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+
+          <select name="priority" required>
+            <option value="">-- Select Priority --</option>
+            <option value="low">Low</option>
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="urgent">Urgent</option>
+          </select>
+
+          <textarea
+            name="message"
+            placeholder="Describe your issue..."
+            required
+            minlength="10"
+            title="Enter at least 10 characters"
+          ></textarea>
+
+          <!-- Hidden field to identify form -->
+          <input type="hidden" name="form_type" value="support" />
+
+          <button type="submit">Submit Support Request</button>
+          <p id="supportStatus" class="mt-2 small"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
