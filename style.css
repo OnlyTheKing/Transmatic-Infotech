@@ -12,10 +12,14 @@ body{
   background-color:#ff8a42dc !important;
 }
 .navbar {
-  background: #0A2A43; /* professional solid base */
-  padding: 15px;
-  border-bottom: 3px solid transparent;
-  border-image: linear-gradient(90deg, #0073C6, #FF8C42) 1; /* subtle gradient accent */
+  background-color: #0A2A43;                 /* solid navbar background */
+  padding: 8px 15px;
+  position: relative;
+  /* gradient bar at the bottom only */
+  background-image: linear-gradient(90deg, #0073C6, #FF8C42);
+  background-repeat: no-repeat;
+  background-size: 100% 4px;                  /* width 100%, height = 4px (thickness) */
+  background-position: left bottom;           /* anchored to the bottom */
 }
 
 .nav-item{
