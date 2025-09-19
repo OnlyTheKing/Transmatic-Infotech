@@ -422,6 +422,28 @@ font-size: large;
   transform: translateX(-50%) translateY(0);
 }
 
+/* socials */
+/* General social icon styles */
+.social-links a {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-right: 12px;
+  transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Brand-specific colors */
+.social-links a.facebook { color: #1877f2; }   /* Facebook Blue */
+.social-links a.twitter { color: #1da1f2; }    /* Twitter Blue */
+.social-links a.linkedin { color: #0077b5; }   /* LinkedIn Blue */
+.social-links a.instagram { color: #e4405f; /* Instagram Pink/Red */
+}
+
+
+/* map */
 
 
 /* About Page */
