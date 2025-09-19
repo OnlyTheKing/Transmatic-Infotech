@@ -531,7 +531,7 @@ font-size: large;
 
 /* Overview section */
 .overview {
-  background: #f08746 !important;
+  background:linear-gradient(135deg, #0073C6, #FF8C42) !important;
   border-radius: .5rem;
   color: #fff;
   text-align: center;
@@ -553,7 +553,7 @@ font-size: large;
   flex-direction: column;
   justify-content: center;
   padding: 40px;
-  background: #f08746;
+  background:linear-gradient(135deg, #0073C6, #FF8C42) !important;
   color: #fff;
   border-radius: 0.5rem;
   height: 100%;
@@ -595,7 +595,7 @@ font-size: large;
 
 /* Hero section */
 .hero {
-  background: #f08746;
+  background:linear-gradient(135deg, #0073C6, #FF8C42) !important;
   margin-top: 50px;
   color: white !important;
   padding: 30px 20px;
@@ -621,7 +621,7 @@ font-size: large;
   margin-top: 40px;
 }
 .industry-card {
-  background: #f08746;
+  background:linear-gradient(135deg, #0073C6, #FF8C42) !important;
   color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0,0,0,0.1);
@@ -663,16 +663,19 @@ font-size: large;
 
 /* CTA */
 .cta {
-  background: #f08746;
+  background:linear-gradient(135deg, #0073C6, #FF8C42) !important;
   color: white;
   text-align: center;
   padding: 50px 20px;
   margin-top: 60px;
   border-radius: 10px;
 }
+
 .cta h2 {
+  
   margin-bottom: 20px;
 }
+
 .cta a {
   background: white;
   color: #f08746;
